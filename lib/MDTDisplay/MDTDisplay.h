@@ -8,7 +8,8 @@ class MDTDisplay
 {
   public:
     MDTDisplay();
-    void refresh(String tostamp);
+    void begin();
+    void refresh(char tostamp[16]);
     void chstate(char state);
   private:
     LiquidCrystal lcd;
